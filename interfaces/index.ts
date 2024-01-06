@@ -8,3 +8,31 @@ export type User = {
   id: number
   name: string
 }
+
+export type Platform = {
+  id: number
+  name: string
+}
+
+export type Genre = {
+  id: number
+  name: string
+}
+
+export type Link = {
+  label: string
+  url: string
+}
+
+export type Game = {
+  id: number
+  name: string
+  platforms: Platform[]
+  genres: Genre[]
+  multiplayer: boolean
+  boxArtUrl: string
+  description: string
+  links: Link[]
+  storyline?: string
+  releaseDate: string
+}
